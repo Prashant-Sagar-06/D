@@ -2,7 +2,7 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class Right_Tri_Number {
+public class Pattern_3 {
     public static void NumberPat(int n){
         for (int i = 0; i <=n; i++) {
             for (int j = 0; j < i; j++) {

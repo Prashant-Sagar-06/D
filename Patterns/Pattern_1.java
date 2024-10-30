@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * Rectangle_Pattern
  */
-public class Rectangle_Pattern {
+public class Pattern_1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
