@@ -6,11 +6,18 @@ public class Count_Freq_Element {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter length of array : ");
         int n = sc.nextInt();   
+        System.out.println("Enter elements of array : ");
         int [] arr = new int[n];
         for (int i = 0; i < n ; i++) {
             arr[i] = sc.nextInt();
         }
-        int [] hash = new int[100]; // Assuming elements are less than 100
+        int max = arr[0];
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        int [] hash = new int[max + 1]; 
         for (int i = 0; i < n; i++) {
             hash[arr[i]]++;
         }
@@ -23,7 +30,7 @@ public class Count_Freq_Element {
         for (int i = 0; i < n; i++) {
             if (hash[arr[i]] != 0) {
                 System.out.println(arr[i] + " : " + hash[arr[i]]);
-                hash[arr[i]] = 0; // To avoid printing the same element again
+                hash[arr[i]] = 0; 
             }
         }
     }
